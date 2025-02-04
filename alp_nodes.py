@@ -15,15 +15,15 @@ from ultralytics import YOLO
 current_file_path = os.path.abspath(__file__)
 current_directory = os.path.dirname(current_file_path)
 
-from .LivePortrait.live_portrait_wrapper import LivePortraitWrapper
-from .LivePortrait.utils.camera import get_rotation_matrix
-from .LivePortrait.config.inference_config import InferenceConfig
+from LivePortrait.live_portrait_wrapper import LivePortraitWrapper
+from LivePortrait.utils.camera import get_rotation_matrix
+from LivePortrait.config.inference_config import InferenceConfig
 
-from .LivePortrait.modules.spade_generator import SPADEDecoder
-from .LivePortrait.modules.warping_network import WarpingNetwork
-from .LivePortrait.modules.motion_extractor import MotionExtractor
-from .LivePortrait.modules.appearance_feature_extractor import AppearanceFeatureExtractor
-from .LivePortrait.modules.stitching_retargeting_network import StitchingRetargetingNetwork
+from LivePortrait.modules.spade_generator import SPADEDecoder
+from LivePortrait.modules.warping_network import WarpingNetwork
+from LivePortrait.modules.motion_extractor import MotionExtractor
+from LivePortrait.modules.appearance_feature_extractor import AppearanceFeatureExtractor
+from LivePortrait.modules.stitching_retargeting_network import StitchingRetargetingNetwork
 from collections import OrderedDict
 
 cur_device = None
